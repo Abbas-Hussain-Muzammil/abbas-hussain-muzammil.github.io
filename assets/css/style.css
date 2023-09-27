@@ -246,25 +246,29 @@ nav ul.show{
     padding: 20px;
     margin: 10px;
 }
-
-.projects-container {
-    display: flex;
-    flex-direction: row;
-    overflow-x: auto; /* Add horizontal scroll if needed */
+/* Update your existing CSS code for the projects section */
+.projects {
+    text-align: center;
+    padding: 50px;
 }
 
-.project {
-    margin-top: 50px;
-    margin-left: 100px;
-    margin-right: 220px; /* Adjust spacing between projects */
+/* Create a CSS class for the project container to display them horizontally */
+.projects-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap; /* Allow projects to wrap to the next row if the screen width is not enough */
+    justify-content: space-between; /* Distribute space between projects */
+}
+
+/* Style individual project items */
+.project {
+    width: calc(33.33% - 20px); /* Set the width of each project item (adjust as needed) */
+    margin-bottom: 20px; /* Add some margin between projects */
     text-align: center;
 }
 
+/* Adjust the styles for project images and descriptions if needed */
 .project-image {
-    max-width: 150px; /* Set maximum width for project images */
+    max-width: 100%;
     height: auto;
 }
 
